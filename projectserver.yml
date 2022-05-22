@@ -69,10 +69,9 @@ Resources:
                   apt-get install apache2 -y
                   systemctl start apache2.service
                   cd /var/www/html
-                  echo "Nerjib web server is running!" > index.html
+                  echo "it works! Udagram, Udacity" > index.html
               ImageId: ami-0b6c84e5b7597ac62
               IamInstanceProfile: !Ref ServerInstanceProfile
-              KeyName: project2
               SecurityGroups:
               - Ref: WebServerSecGroup
               InstanceType: t3.medium
